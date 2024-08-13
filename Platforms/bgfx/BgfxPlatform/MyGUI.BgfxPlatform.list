@@ -1,0 +1,20 @@
+set (HEADER_FILES
+  include/MyGUI_BgfxDataManager.h
+  include/MyGUI_BgfxDiagnostic.h
+  include/MyGUI_BgfxPlatform.h
+  include/MyGUI_BgfxRenderManager.h
+)
+set (SOURCE_FILES
+  src/MyGUI_BgfxDataManager.cpp
+  src/MyGUI_BgfxRenderManager.cpp
+)
+SOURCE_GROUP("Header Files" FILES
+  include/MyGUI_BgfxDataManager.h
+  include/MyGUI_BgfxDiagnostic.h
+  include/MyGUI_BgfxPlatform.h
+  include/MyGUI_BgfxRenderManager.h
+)
+SOURCE_GROUP("Source Files" FILES
+  src/MyGUI_BgfxDataManager.cpp
+  src/MyGUI_BgfxRenderManager.cpp
+)

@@ -122,7 +122,7 @@ option(MYGUI_USE_FREETYPE "Use freetype for font texture rendering" TRUE)
 option(MYGUI_MSDF_FONTS "Enable msdf fonts generation support" FALSE)
 option(MYGUI_DONT_USE_OBSOLETE "Remove obsolete functions from build" FALSE)
 
-set(MYGUI_RENDERSYSTEM 3 CACHE STRING
+set(MYGUI_RENDERSYSTEM 9 CACHE STRING
 "Specify the Render System. Possible values:
   1 - Dummy
   2 - Export (not used)
@@ -131,7 +131,8 @@ set(MYGUI_RENDERSYSTEM 3 CACHE STRING
   5 - Direct3D 9
   6 - Direct3D 11
   7 - OpenGL 3.x
-  8 - OpenGL ES 2.0 (Emscripten)"
+  8 - OpenGL ES 2.0 (Emscripten)
+  9 - Bgfx"
 )
 
 if(MYGUI_RENDERSYSTEM EQUAL 4 OR MYGUI_RENDERSYSTEM EQUAL 7)
