@@ -14,7 +14,7 @@ namespace base
 
 	void BaseManager::createGuiPlatform()
 	{
-		mPlatform = new MyGUI::DummyPlatform();
+		mPlatform = new MyGUI::BgfxPlatform();
 		setupResources();
 		mPlatform->initialise();
 	}

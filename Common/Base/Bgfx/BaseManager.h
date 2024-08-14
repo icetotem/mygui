@@ -2,7 +2,7 @@
 
 #include "Base/PlatformBaseManager/SdlBaseManager.h"
 
-#include <MyGUI_DummyPlatform.h>
+#include <MyGUI_BgfxPlatform.h>
 
 namespace base
 {
@@ -23,7 +23,7 @@ namespace base
 		void destroyGuiPlatform() override;
 
 	private:
-		MyGUI::DummyPlatform* mPlatform = nullptr;
+		MyGUI::BgfxPlatform* mPlatform = nullptr;
 	};
 
 }
